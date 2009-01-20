@@ -8,10 +8,14 @@
 \title{Solves a linear inverse model using least distance programming}
 \description{Solves a linear inverse model using least distance programming,
 i.e. minimizes the sum of squared unknowns.
-  \cr Input presented either:
+
+  Input presented either:
+
+    \itemize{
   \item as matrices E, F, A, B, G, H (Ldei.double)
   \item as a list (Ldei.lim) or 
   \item as a lim input file (Ldei.limfile)
+}
 }
 \usage{
 Ldei(...)
@@ -46,9 +50,12 @@ Ldei.double(...)}
  \deqn{Gx>=H}
 } 
 \seealso{\code{\link[limSolve]{ldei}}, the more general function from package limSolve
-\item \code{\link{Linp}}, to solve the linear inverse problem by linear programming 
-\item \code{\link{Lsei}}, to solve the linear inverse problem by lsei (least squares with equality and inequality constraints)
-\item function \code{\link[limSolve]{ldei}} from package\code{limSolve}}
+
+ \code{\link{Linp}}, to solve the linear inverse problem by linear programming
+
+ \code{\link{Lsei}}, to solve the linear inverse problem by lsei (least squares with equality and inequality constraints)
+
+ function \code{\link[limSolve]{ldei}} from package\code{limSolve}}
 \keyword{algebra}
 \keyword{array}
 \keyword{optimize}

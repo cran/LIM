@@ -6,10 +6,13 @@
 \alias{Linp.double}
 \title{Solves a linear inverse model using linear programming}
 \description{Solves a linear inverse model using linear programming
-  \cr Input presented either:
+
+  Input presented either as:
+  \itemize{
   \item matrices E, F, A, B, G, H (Linp.double) or
   \item as a list (Linp.lim) or
   \item as a lim input file (Linp.limfile)
+}
   }
 \usage{
 Linp(...)
@@ -23,7 +26,7 @@ Linp.double(...) }
   \item{verbose }{if TRUE: when reading the file, prints warnings and messages to the screen}
   \item{cost }{if not NULL, a vector with the coefficients of the cost function (to be minimised)}
   \item{ispos }{if TRUE: all x-values have to be positive}
-  \item{... }{other arguments passed to function \\code{\link[limSolve]{linp}} from package\code{limSolve}}
+  \item{... }{other arguments passed to function \link[limSolve]{linp} from package\code{limSolve}}
 }
 \value{
   a list containing:
@@ -63,9 +66,12 @@ Linp.double(...) }
   }
 
 \seealso{\code{\link[lpSolve]{linp}}, the more general function from package lpSolve
-\item \code{\link{Ldei}}, to solve the linear inverse problem by least distance programming 
-\item \code{\link{Lsei}}, to solve the linear inverse problem by lsei (least squares with equality and inequality constraints)
-\item function \code{\link[limSolve]{linp}} from package\code{limSolve}
+
+ \code{\link{Ldei}}, to solve the linear inverse problem by least distance programming
+
+\code{\link{Lsei}}, to solve the linear inverse problem by lsei (least squares with equality and inequality constraints)
+
+function \code{\link[limSolve]{linp}} from package\code{limSolve}
 }
 \keyword{algebra}
 \keyword{array}

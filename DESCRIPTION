@@ -1,5 +1,5 @@
 Package: LIM
-Version: 1.1
+Version: 1.2
 Title: Linear Inverse Model examples and solution methods.
 Author: Karline Soetaert <k.soetaert@nioo.knaw.nl>,
   Dick van Oevelen<d.vanoevelen@nioo.knaw.nl>
@@ -11,5 +11,5 @@ Description: Functions that read and solve linear inverse problems (food web pro
   subject to equality constraints Ex=f and inequality constraints Gx>=h. Uses package limSolve.
 License: GPL
 LazyData: yes
-Revision: 7
-Packaged: Mon Nov 10 04:44:27 2008; theussl
+Revision: 11
+Packaged: Tue Jan 20 04:55:44 2009; rforge
