@@ -24,9 +24,9 @@
 
 \usage{
 Setup(...)
-Setup.limfile(file, verbose = TRUE, ...)
-Setup.character(...)
-Setup.liminput(liminput,...)
+\method{Setup}{limfile}(file, verbose = TRUE, ...)
+\method{Setup}{character}(...)
+\method{Setup}{liminput}(liminput,...)
 }
 
 \arguments{
@@ -95,7 +95,7 @@ Setup.liminput(liminput,...)
   }
 }
 \author{
-  Karline Soetaert <k.soetaert@nioo.knaw.nl>
+  Karline Soetaert <karline.soetaert@nioz.nl>
 }
 
 \examples{

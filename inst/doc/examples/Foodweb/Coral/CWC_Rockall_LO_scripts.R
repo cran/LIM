@@ -36,10 +36,10 @@ require(LIM)
 LIM       <- LIMCoralRockall
 
 # The dimensionality of the problem:
-LIM[c("NUnknowns","NEquations","NConstraints","NComponents",
-  "NExternal","NVariables")]
+LIM[c("NUnknowns", "NEquations", "NConstraints", "NComponents",
+      "NExternal", "NVariables")]
 
-SollseiDef<- Lsei(LIM,parsimonious=TRUE)
+SollseiDef<- Lsei(LIM,parsimonious = TRUE)
 
 plotweb(Flowmatrix(LIM))
 RangesDef <- Xranges(LIM)
@@ -55,7 +55,7 @@ notrun <- function ()
                      jmp  = c(RangesDef[,2]-RangesDef[,1])/4,
                      x0   = SollseiDef$X)
 # 500 runs are saved in a file
-load(file="MCR.Rdata")
+load(file = "MCR.Rdata")
 
 ## =============================================================================
 ## Markov chain sampling
@@ -72,7 +72,7 @@ notrun <- function ()
                      jmp  = c(RangesDef[,2]-RangesDef[,1])/4,
                      x0   = SollseiDef$X)
 # load 500 samples instead
-load(file="MCR.Rdata")
+load(file = "MCR.Rdata")
 ## =============================================================================
 ## Run the sensitivity analysis
 ## =============================================================================
@@ -80,11 +80,11 @@ load(file="MCR.Rdata")
 ## Again a very long simulation - skip it - but then fig 4 cannot be displayed..
 # set counters
 notrun <- function ()  {
- i<-1 # counts the succesful initializations
- j<-1 # counts the initialization attempts (not all are succesful)
- SolBaySens<-NULL # this is where the runs will be saved
- Pars      <-NULL # this is where the feasible parameter values will be stored
- PARS      <- c("FracCWC","FracEUN","FracHES","FracSPO","FracHYD","FracCRI",
+ i <- 1 # counts the succesful initializations
+ j <- 1 # counts the initialization attempts (not all are succesful)
+ SolBaySens <- NULL # this is where the runs will be saved
+ Pars       <- NULL # this is where the feasible parameter values will be stored
+ PARS       <- c("FracCWC","FracEUN","FracHES","FracSPO","FracHYD","FracCRI",
                 "FracPOL","FracBIV","FracLIM","FracASP","FracSUS",
                 "FracOMN","FracCRA","FracURC","FracSTA","FracFIS")
                 # list with parameters that are initialized
@@ -168,7 +168,7 @@ notrun <- function ()  {
  A4()
  par(mar=c(4, 8, 0, 10),family="serif")
  web    <- colMeans(SolBayDef)
- std    <- sd(SolBayDef)
+ std    <- apply(SolBayDef, 2, sd)
  ord    <- order(web,decreasing = TRUE)
  xlab_  <- expression(paste("Flow value ") * group("(", "mmol C " * m^{-2} * d^{-1}, ")"))
  Plotranges(min=rev((web[ord]-std[ord])), max=rev((web[ord]+std[ord])), value=rev((web[ord])),
@@ -190,7 +190,7 @@ notrun <- function ()  {
 
  par(mar=c(4, 10, 0.1, 10),mgp=c(2.,0.6,0),family="serif",yaxs="i")
  web    <- colMeans(SolBayDef)
- std    <- sd(SolBayDef)
+ std    <- apply(SolBayDef, 2, sd)
  ord     <- rev(order(web,decreasing = TRUE))
  even   <- seq(2,140,2)
  uneven <- seq(1,139,2) 
