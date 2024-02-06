@@ -122,7 +122,7 @@ mtext(side = 3, cex = 1.5, outer = TRUE, line = -1.5,
 \seealso{
   browseURL(paste(system.file(package="LIM"), "/doc/examples/Reactions/", sep=""))
 
-  contains "E\_coli.lim", the input file; read this with \code{Setup}
+  contains "E_coli.lim", the input file; read this with \code{Setup}
 
 }
 

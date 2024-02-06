@@ -1,10 +1,10 @@
 citHeader("To cite package 'LIM' in publications use:")
 
-citEntry(entry="Article",
+bibentry(bibtype="article",
   title = "Quantifying Food Web Flows Using Linear Inverse Models.",
-  author = personList(as.person("Dick van Oevelen"), as.person("Karel van den Meersche"), 
-  as.person("Filip Meysman"), as.person("Karline Soetaert"), 
-  as.person("Jack J Middelburg"), as.person("Alain F Vezina")),
+  author = c(person("Dick van Oevelen"), person("Karel van den Meersche"), 
+    person("Filip Meysman"), person("Karline Soetaert"), 
+    person("Jack J Middelburg"), person("Alain F Vezina")),
   journal =	"Ecosystems",
   year = 	"2010",
   volume =	"13",

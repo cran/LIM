@@ -1,5 +1,5 @@
-799d3907ce421d65aef6c3ec8c365423 *DESCRIPTION
-bb3899278954c2f836fa3ca9b0c67348 *NAMESPACE
+004f66ab3667416922fbe3d746081b45 *DESCRIPTION
+137626c566967d2f45f8d6aca849e3c0 *NAMESPACE
 8b34c45e4fb20ff3b06c70529b14bb1f *R/Flowmatrix.R
 b90a4698a1a99dc696211dac39c15d2d *R/LIM.r
 07ee6f18606148d151b4978a6d077d34 *R/Ldei.R
@@ -11,6 +11,7 @@ b47ba82b85ddf35f588dfa93b9f4f840 *R/Lsei.R
 b06d67991371d5384135eeefcb30773b *R/Xranges.R
 e06c14ce82e9e797031ee52b70863db6 *R/Xsample.R
 9f45eab0bf0eec53572d98dd92bc9c43 *R/read.limfile.r
+820b8f1d626cad7591237ca5dec7cd18 *build/vignette.rds
 fca5ee826b437d15ccef35e83236e46b *data/FILERigaAutumn.rda
 74eba01d561043584653432fa224b021 *data/LIMBlending.rda
 9eb922d79aa9c7249431ff01fa378236 *data/LIMBrouageMudflat.rda
@@ -26,9 +27,12 @@ caeade256a43cf95ee047578ab95cf1c *data/LIMRigaSummer.rda
 1c33978de239f374aa0ee44039ad5bac *data/LIMinputBlending.rda
 2a76fd38e75fde6ae2c4dde0c28a1d57 *demo/00Index
 b685d362d9245305f435a6150ea490cd *demo/LIMexamples.r
-ddb5c483543971e0d84db4c312bc0038 *inst/CITATION
-8fc635ea631e18382b4ddee4c56eae71 *inst/doc/LIM.pdf
-39150e375480cc2c31067f365dcd3959 *inst/doc/LIMecoli.pdf
+d20b1d161a275f3705b8888cbf8c992d *inst/CITATION
+fe186a6e7b3bab5738a332488fbf63be *inst/doc/LIM.Rnw
+0a824371aa033ac46a5f7163b6a13b6a *inst/doc/LIM.pdf
+ef76cd8cb6ecbe3c702f6c47c669305c *inst/doc/LIMecoli.R
+fad0e2987222410d839048a1793d8993 *inst/doc/LIMecoli.Rnw
+3c5ad127b0fe2f7aee19024960486738 *inst/doc/LIMecoli.pdf
 57232705c410110a93c1b2718416c408 *inst/doc/examples/Foodweb/BrouageMudflat.input
 ad75ad39bb808a57b95a84a07fb07d9e *inst/doc/examples/Foodweb/CWC_Rockall.input
 7af8d76ec29850a0b0e110a1f40dcb8b *inst/doc/examples/Foodweb/CaliforniaSediment.input
@@ -74,7 +78,7 @@ b13f8ccca93533a8b2e6a3800f672c8c *inst/doc/examples/Reactions/reaction.lim
 42f33f2de2857ca5ca656eb2c2a37b33 *man/LIMBrouageMudflat.Rd
 9f2826813410f590741cfad66ca302c3 *man/LIMCaliforniaSediment.Rd
 4382cdd922e4cb710f675a93f03db22a *man/LIMCoralRockall.Rd
-ac2b6fc6b97ee8668e63421a30ed2bc3 *man/LIMEcoli.Rd
+5824308d45e922706cb6648e592acc37 *man/LIMEcoli.Rd
 2ba6bca51d015ed3e13e4874037b9184 *man/LIMEverglades.Rd
 7f24cb21885d713a622d3ddf6d741758 *man/LIMRigaAutumn.Rd
 c299413c98283ebb99a8ccbe71a6ed05 *man/LIMRigaSpring.Rd
@@ -85,7 +89,7 @@ bf297391093762d7c5d4e383250bf8dd *man/LIMTakapoto.Rd
 6900b35b73f29524bfc6c08c1969aeaf *man/Linp.Rd
 99cc6a6db82eed0c0c435645378cbf35 *man/Lsei.Rd
 fab92860f1f9a8d4ae8bd1dec34a1b0a *man/PrintMat.Rd
-d4d34840b088b765d1ab748bd9fa2f05 *man/Read.Rd
+76288b8a2fe80cee1c14a112e192b780 *man/Read.Rd
 79a9b84e1053edb82b4c0a33fc12faca *man/Setup.Rd
 4fdb20fe6394961f13eb1ff8cac74a8f *man/Variables.Rd
 e0b0ea33fe11cc05ae4b69c1337f93d4 *man/Varranges.Rd
